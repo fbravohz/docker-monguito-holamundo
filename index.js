@@ -12,7 +12,7 @@ const app = express()
 'mongodb://127.0.0.1:27017/myapp'
 mongoose.connect('mongodb://nico:password@monguito:27017/monguito?authSource=admin')
 app.get('/', async (_req, res) => {
-  console.log('listando... chanchitos...')
+  console.log('listando... chanchitos... dobles ...')
   // return res.send({si: 'si'})
   const animales = await Animal.find();
   return res.send(animales)
