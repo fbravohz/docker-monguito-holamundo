@@ -10,7 +10,7 @@ const app = express()
 
 // mongoose.connect('mongodb://nico:password@monguito:27017/miapp?authSource=admin')
 'mongodb://127.0.0.1:27017/myapp'
-mongoose.connect('mongodb://nico:password@localhost:27017/monguito?authSource=admin')
+mongoose.connect('mongodb://nico:password@monguito:27017/monguito?authSource=admin')
 app.get('/', async (_req, res) => {
   console.log('listando... chanchitos...')
   // return res.send({si: 'si'})
